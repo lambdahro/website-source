@@ -57,7 +57,7 @@ defaultContentLanguageInSubdir = true
 
   # site info (optional)
   keywords = ["functional-programming","meetup","rostock"]
-  description = "Ein regelmäßiges Treffen in Rostock zu den Themen Softwareentwicklung, Informatik mit Fokus auf funktionaler Programmierung."
+  description = "Ein regelmäßiges Treffen in Rostock zu den Themen Softwareentwicklung und Informatik mit Fokus auf funktionaler Programmierung."
   logoTitle = "λHRO" # shown on top-left, default: title
   siteLogoImage = "images/lambda-logo.svg"     # shown besides logoTitle
   # headerTitle = "Den"                   # default: title
