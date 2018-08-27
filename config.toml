@@ -1,3 +1,9 @@
 baseURL = "https://lambdahro.github.io/"
 languageCode = "de-de"
 title = "LambdaHRO - Lambda Rostock"
+theme = "massively"
+# Enable comments by entering your Disqus shortname
+disqusShortname = ""
+# Enable Google Analytics by entering your tracking code
+googleAnalytics = ""
+
