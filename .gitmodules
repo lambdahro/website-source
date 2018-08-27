@@ -5,3 +5,6 @@
 [submodule "themes/massively"]
 	path = themes/massively
 	url = https://github.com/curttimson/hugo-theme-massively.git
+[submodule "themes/den"]
+	path = themes/den
+	url = https://github.com/shaform/hugo-theme-den
