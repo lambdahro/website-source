@@ -1,12 +1,12 @@
-# LambdaHRO website sources
+# LambdaHRO Webseite (Quellen)
 
-This website is built using [Hugo](https://gohugo.io/).
+Die Webseite wird mit [Hugo](https://gohugo.io/) gebaut.
 
-## Structure / Setup
+## Struktur/Einrichtung
 
-Checkout this repository and update the related git submodules. They 
-contain the theme for Hugo and the website publishing repository mapped
-to the folder `public`.
+Zuerst das Repository auschecken und die eingebundenen Submodule 
+initialisieren. Diese enthalten das Theme für Hugo und das Verzeichnis, in
+dem die fertige Webseite zur Veröffentlichung liegt (`public`).
 
 ```
 % git clone <repo-url>
@@ -14,12 +14,69 @@ to the folder `public`.
 % git submodule update --init --recursive
 ```
 
-To do this in one step use the `--recursive` flag for git like this:
+Mittels des Parameters `--recursive` kann das in einem Schritt erledigt werden:
 
 ```
 % git clone --recursive <repo-url>
 ```
 
-Now install Hugo and start a server using `hugo server` to make the
-website locally available at `http://localhost:1313`.
+Hugo muß installiert sein und dann kann direkt aus dem Repository-Verzeichnis
+der lokale Server mit `hugo server` gestartet werden. Die Webseite ist 
+anschließend unter `http://localhost:1313` erreichbar.
+
+### Beiträge
+
+Beiträge im Markdownformat bitte im Unterordner `content/de/posts` anlegen.
+Die Benamung sollte nach dem Schema `YYYY-MM-DD-Titel.md` erfolgen.
+
+Der Kopf einer jeden Datei enthält das sogenannte "Frontmatter", das in 
+etwa wie folgt aussehen sollte:
+
+```
+---
+title: "Titel des Beitrags"
+date: Datum der Veröffentlichung (YYYY-MM-DD)
+draft: false
+tags: [ "hier", "können", "tags", "eingetragen", "werden" ]
+categories: [ "Hier", "Kategorien", "eintragen" ]
+---
+```
+
+Insofern keine Tags verwendet werden, kann die Angabe leer bleiben (`[ ]`).
+Kategorien gibt es bisher `Termine` und `Vorträge` gegebenenfalls sind 
+beide zu setzen, sonst nur eine.
+
+## Veröffentlichung der Webseite
+
+Nachdem die gewünschten Änderungen gemacht wurden, einfach einmal Hugo 
+ausführen:
+
+```
+% hugo
+```
+
+Danach in den Ordner `public` wechseln und die dortigen Änderungen 
+übernehmen:
+
+```
+% cd public
+% git add .
+% git commit -m "Publish website"
+```
+
+Zu guter Letzt müssen die Änderungen noch hochgeladen werden:
+
+```
+% git push origin HEAD:master
+```
+
+Jetzt müssen die Änderungen im lokalen Repository noch aufgenommen werden:
+
+```
+% cd ..
+% git add .
+% git commit
+...
+% git push
+```
 
