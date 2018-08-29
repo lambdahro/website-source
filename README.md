@@ -70,6 +70,9 @@ Zu guter Letzt müssen die Änderungen noch hochgeladen werden:
 % git push origin HEAD:master
 ```
 
+Alle Schritte bis hier können auch einfach durch Ausführen des Skripts 
+`deploy.sh` automatisiert werden.
+
 Jetzt müssen die Änderungen im lokalen Repository noch aufgenommen werden:
 
 ```
