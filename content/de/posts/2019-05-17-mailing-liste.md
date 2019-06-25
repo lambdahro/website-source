@@ -4,7 +4,7 @@ date: 2019-05-17
 lastmod: 2019-05-17
 draft: false
 tags: [ ]
-categories: [ "Termine", "Vorträge" ]
+categories: [ ]
 ---
 
 # Es gibt eine Mailing-Liste #
