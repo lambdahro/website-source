@@ -67,7 +67,7 @@ Danach in den Ordner `public` wechseln und die dortigen Änderungen
 Zu guter Letzt müssen die Änderungen noch hochgeladen werden:
 
 ```
-% git push origin HEAD:master
+% git push origin HEAD:main
 ```
 
 Alle Schritte bis hier können auch einfach durch Ausführen des Skripts 
